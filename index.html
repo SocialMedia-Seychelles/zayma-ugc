@@ -49,24 +49,19 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--lagoon); outlin
 
 /* top bar */
 .name-mark { white-space: nowrap; }
-@media (max-width: 420px) { .name-mark small { display: none; } .name-mark { font-size: 14px; } }
 .mini-wm b { white-space: nowrap; }
-@media (max-width: 420px) {
+.logo-sm { width: 36px; height: 36px; object-fit: contain; flex: none; }
+@media (max-width: 1100px) { .top nav a.ig span { display: none; } }
+@media (max-width: 960px) { .top nav a[href="#create"], .top nav a[href="#process"] { display: none; } }
+@media (max-width: 480px) {
   .top .wrap { gap: 8px; }
   .top nav { gap: 2px; }
   .top nav a.cta { padding: 8px 11px; font-size: 11px; letter-spacing: .06em; }
   .top nav a.ig { padding: 8px 6px; }
-  @media (max-width: 480px) {
   .mini-wm-wrap .mini-wm { display: none; }
   .name-mark .nm-text { display: none; }
-  @media (max-width: 1100px) { .top nav a.ig span { display: none; } }
-@media (max-width: 960px) { .top nav a[href="#create"] { display: none; } }
-.logo-sm { width: 38px; height: 38px; }
+  .logo-sm { width: 38px; height: 38px; }
 }
-.logo-sm { width: 30px; height: 30px; }
-  .name-mark { font-size: 13px; gap: 8px; }
-}
-.logo-sm { width: 36px; height: 36px; object-fit: contain; flex: none; }
 .foot-brand { display: inline-flex; align-items: center; gap: 12px; }
 .foot-brand img { width: 34px; height: 34px; }
 .contact-logo { width: clamp(96px, 12vw, 140px); height: auto; margin-bottom: 22px; display: block; }
